@@ -6,4 +6,14 @@ import vn.be.platform_service.dto.ProductDTO;
 
 public interface ProductService {
     Page<ProductDTO> getProducts(Pageable pageable);
+
+    ProductDTO addProduct(ProductDTO productDTO);
+
+    void deleteProduct(Long id);
+
+    ProductDTO updateProduct(Long id, ProductDTO productDTO);
+
+    void deleteSoftProduct(Long id);
+
+    ProductDTO getProductById(Long id);
 }

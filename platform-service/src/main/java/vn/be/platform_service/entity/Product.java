@@ -1,9 +1,7 @@
 package vn.be.platform_service.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity
 @Data
@@ -18,5 +16,5 @@ public class Product {
     private String name;
     private String description;
     private String price;
-
+    private Integer active;
 }
