@@ -19,6 +19,7 @@ public class ProductServiceImpl implements ProductService {
     private final ProductRepository productRepository;
     private final ProductMapper productMapper;
 
+    // Su dung stream de lay nhung cai active = 1 ra
     @Override
     public Page<ProductDTO> getProducts(Pageable pageable) {
         return productRepository.findAll(pageable).map(productMapper::toDTO);
